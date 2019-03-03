@@ -1,2 +1,2 @@
 # testing
-a simple testing framework for all kind of automatic tests
+project with various testing projects. will get you going fast for tdd, bdd and such.
