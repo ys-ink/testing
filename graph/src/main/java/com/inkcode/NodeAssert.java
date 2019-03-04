@@ -23,4 +23,9 @@ public class NodeAssert<T> extends AbstractAssert<NodeAssert<T>, Graph<T>> {
     Assertions.assertThat(actual.successors(node)).containsExactlyInAnyOrder(nodes);
     return this;
   }
+
+  public NodeAssert<T> hasNoChildren() {
+    Assertions.assertThat(actual.successors(node)).isEmpty();
+    return this;
+  }
 }
