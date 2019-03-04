@@ -1,4 +1,4 @@
-package com.inkcode;
+package com.github.ys_ink;
 
 import com.google.common.graph.GraphBuilder;
 import com.google.common.graph.MutableGraph;
@@ -9,10 +9,10 @@ class NodeAssertTest {
 
   @Test
   void nodeHasExactChildren() {
-    MutableGraph<String> graph = GraphBuilder.directed().build();
-    String rootNode = "root";
-    String childNode = "child1";
-    String childNode2 = "child2";
+    final MutableGraph<String> graph = GraphBuilder.directed().build();
+    final String rootNode = "root";
+    final String childNode = "child1";
+    final String childNode2 = "child2";
     graph.addNode(rootNode);
     graph.addNode(childNode);
     graph.addNode(childNode2);

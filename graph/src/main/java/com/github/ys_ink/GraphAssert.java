@@ -1,4 +1,4 @@
-package com.inkcode;
+package com.github.ys_ink;
 
 import com.google.common.graph.Graph;
 import com.google.common.graph.Traverser;

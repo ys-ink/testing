@@ -1,4 +1,4 @@
-package com.inkcode;
+package com.github.ys_ink;
 
 import com.google.common.graph.GraphBuilder;
 import com.google.common.graph.MutableGraph;

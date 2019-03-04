@@ -1,17 +1,18 @@
 plugins {
-	id 'java'
-	id 'java-library'
+    id 'java'
+    id 'java-library'
 }
 
 allprojects {
-	sourceCompatibility = 10
-	group = 'com.ink-code'
+    sourceCompatibility = 10
+    targetCompatibility = 10
+    group = 'com.github.ys-ink'
 }
 
 subprojects {
-	repositories {
-		mavenCentral()
-	}
+    repositories {
+        mavenCentral()
+    }
 
-	apply plugin: 'java'
+    apply plugin: 'java'
 }
