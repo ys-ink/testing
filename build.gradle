@@ -4,6 +4,8 @@ plugins {
 }
 
 allprojects {
+    apply plugin: 'java'
+
     sourceCompatibility = 10
     targetCompatibility = 10
     group = 'com.github.ys-ink'
@@ -14,5 +16,15 @@ subprojects {
         mavenCentral()
     }
 
+    dependencies {
+        compile 'org.junit.jupiter:junit-jupiter:5.4.0'
+        compile 'org.assertj:assertj-core:3.9.1'
+    }
     apply plugin: 'java'
+    test {
+        useJUnitPlatform()
+        testLogging {
+            events "passed", "skipped", "failed"
+        }
+    }
 }

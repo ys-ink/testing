@@ -1,5 +1,14 @@
 language: java
+jdk: openjdk10
 before_install:
   - chmod +x gradlew
 install:
   ./gradlew assemble
+
+deploy:
+  provider: releases
+  api_key: "GITHUB OAUTH TOKEN"
+  file: "FILE TO UPLOAD"
+  skip_cleanup: true
+  on:
+    tags: true

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.github.ys_ink.GraphAssertTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-03-04T20:36:09" hostname="DESKTOP-BU66GHI" time="0.066">
+  <properties/>
+  <testcase name="hasNodeExactOrder()" classname="com.github.ys_ink.GraphAssertTest" time="0.051"/>
+  <testcase name="hasNodesTest()" classname="com.github.ys_ink.GraphAssertTest" time="0.013"/>
+  <testcase name="hasNodeTest()" classname="com.github.ys_ink.GraphAssertTest" time="0.001"/>
+  <testcase name="hasNodesExactlyTest()" classname="com.github.ys_ink.GraphAssertTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

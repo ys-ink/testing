@@ -1,10 +1,9 @@
 pluginManagement {
-	repositories {
-		gradlePluginPortal()
-	}
+    repositories {
+        gradlePluginPortal()
+    }
 }
 rootProject.name = 'testing'
-include 'core'
 include 'spring'
 include 'graph'
 
