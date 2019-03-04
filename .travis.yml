@@ -5,7 +5,7 @@ before_install:
 install: "./gradlew assemble"
 deploy:
   provider: releases
-  api_key: 2174921e3e3ed56ac7539a628d41d475b725c3f9
+  api_key: cd096e3e3256bef53e401fb18492560d82f919ff
   file: graph/build/libs/graph.jar
   on:
     repo: ys-ink/testing
