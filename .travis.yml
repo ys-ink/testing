@@ -2,13 +2,12 @@ language: java
 jdk: openjdk10
 before_install:
   - chmod +x gradlew
-install:
-  ./gradlew assemble
-
+install: "./gradlew assemble"
 deploy:
   provider: releases
-  api_key: "GITHUB OAUTH TOKEN"
-  file: "FILE TO UPLOAD"
-  skip_cleanup: true
+  api_key:
+    secure: YavV9Lfwm+QhhMSIkXzECC8KXmWZFzzT2IAT7uXHB1dPMx8KsmI47QWWr4fKy3jCIOH2PGqJQ89Jt2NYYQXK2QM/bar+plEKjyF2EMDqnlekWM+lykYWEsbHjzUe/vVtnNytmmVZrQAu9dlBsYB8TsjnXMnlf3xHNuIlaUHbfwKTlhav01NKFoG+spp/SPRkYW1+1T+bCEaK7QWYSg72y4TPkbRa6QeaGMEfWPhiq7BEbl/c3+9Lj86buvOvpbrj0xv6RI0j+dchRR5e47lztHSyjO8HP2aZkZt9nO/klemDk+ZbPsvYJj8NATOq3gJbU537xBOZq2csq1VIqXfoKYQm0IZdMLaBMjNNpYhVEU0k3ZRLshHYvh0CvCBXBewmTBdlrXhmbQvmjxt6Yo9ofGMc3PLf5MyT0HnmRMFBfdJMoTfuHlP0ShjNO9A72bFy4paDtJ0tpsNP8OdE8QNApsY8Zdb7bFNmKJHRMT/M/UgVsURWJG9xyP1wsd6m/yK8yo/1oGBfdEih3lgP8WpKKADH14Koa+dOd0noeaniKa+kKCeBBw8DXOTEvsS8p85rifktDoTSC5koAegH/eBgewN+OlpqOQwFxjV18eyqin5ku+/UJXheOM2ibAViVH3EdivQXodz3MHisPoskeYh+2F3OeY9WXI/IQ8Ji0rcl7Y=
+  file: graph/build/lib/graph.jar
   on:
-    tags: true
+    repo: ys-ink/testing
+  draft: true
