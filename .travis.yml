@@ -1,12 +1,11 @@
 language: java
 jdk: openjdk10
 before_install:
-- chmod +x gradlew
+  - chmod +x gradlew
 install: "./gradlew assemble"
 deploy:
   provider: releases
-  api_key:
-    secure: LH5kzfIx84moAmXndulVDhmlGJ7S+LKs2LQQ00jlvUH97wgCFl/cZLMCxNRyjQ/EpUMy5GcYtzeofBJbJoAE5YGH9pikRZHixv7QaGL8UIvnHJJgQLg2dfkZYHTP8HjHmPbbAD65BgsONr9SNSkb0E+cFZldMH47x5KxNQfXXRLcDWoJJ95ZvTySaOGqGbI/y3sQNRC/maqDyn33lvD3ZWMgnbt7sWaBwu6Heti3bffMGVuK5eQkDw6e3LTMjrsDBsYH7Jm8jT9pDFNk05wOSTH/fbCbx89D2Nm+2vufaxb9u1AZwXwzvC/PFZZB5sNqK09rBTJURVFBIoyKb45ay6AC4MgwbgMDpA9LBcEewqZEhMcVjQdcUa6ohSvK8KkgwV4MyjygUDB3SiKHMyKVPPc6XOwPMBRVYoCR27UVmaEf7b/zAsdRhJn2k7GLV6PkAPKJ/zIITuVRdi1eiCdFFah4tE9MZ0kDfpdZFKdCV1SudEDb913sO+qva4CrnQDl/sid891P9E8Wc0geHQoG24SaI9p+KqzhIjXULRyZt6Vep9802IvHitCDthjulSsL18dNQEqpPLLFIJCVgtVXbkDM23TkYofWIzQ9TeRbh6K/TCU0R8jduFp8j1cALNkadGIeSJgXhDwvGHtUeIYHFFcrjI/gqkXLbIF/4z1Cd9U=
+  api_key: 2174921e3e3ed56ac7539a628d41d475b725c3f9
   file: graph/build/libs/graph.jar
   on:
     repo: ys-ink/testing
